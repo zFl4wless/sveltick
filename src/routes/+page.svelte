@@ -26,8 +26,8 @@
 
 <Pond/>
 
-<main class="flex justify-center items-center h-screen overflow-hidden">
-	<div class="h-16 overflow-visible w-full flex justify-center gap-16">
+<main class="flex justify-center items-center h-full overflow-hidden">
+	<div class="h-16 overflow-visible w-full flex justify-center gap-16 scale-50 sm:scale-100">
 		<div class="flex gap-6">
 			<div class="relative">
 				<div class="digit-bubble z-50"></div>
