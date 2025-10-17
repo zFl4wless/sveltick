@@ -1,20 +1,24 @@
 @import 'tailwindcss';
 
+@import './styles/background.css';
+@import './styles/clock.css';
+@import './styles/pond.css';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html,
 body {
-    @apply bg-slate-950;
-}
-
-.digit {
-    @apply aspect-square h-16 flex justify-center items-center text-slate-400 text-lg font-semibold;
-}
-
-.focus-glass {
-    background: rgba(255, 255, 255, 0);
-    border-radius: 16px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(0px);
-    -webkit-backdrop-filter: blur(0px);
-    border: 1px solid rgba(255, 255, 255, 1);
-
-    @apply h-16 aspect-square absolute top-0 left-0 brightness-125;
+    overscroll-behavior-x: none;
+    overscroll-behavior-y: none;
+    scroll-behavior: smooth;
+    min-height: 100%;
 }

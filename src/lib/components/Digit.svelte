@@ -5,7 +5,7 @@
 	const digitHeight = 64;
 </script>
 
-<div class="flex flex-col bg-slate-900 border border-slate-800 transition-transform duration-500 ease-in-out"
+<div class="digit-container flex flex-col transition-transform duration-500 ease-in-out"
 		 style="transform: translateY(-{value * digitHeight}px);">
 	{#each Array(limit + 1) as _, i}
 		<span class="digit">{i}</span>

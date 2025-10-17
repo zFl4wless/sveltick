@@ -1,0 +1,25 @@
+:root {
+    --hue: 223;
+}
+
+.digit-container {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.digit {
+    @apply aspect-square h-16 flex justify-center items-center text-slate-100 text-lg font-semibold;
+}
+
+.digit-bubble {
+    height: 60px;
+    box-shadow: 0 -0.0625em 0 0.0625em hsl(223, 90%, 90%) inset,
+    0 0 0 0.0625em hsl(180, 100%, 32%) inset,
+    0 0 0.25em 0.25em hsla(178, 100%, 32%, 0.7) inset;
+
+    @apply aspect-square absolute top-1/2 left-1/2 -translate-1/2 rounded-full;
+}
