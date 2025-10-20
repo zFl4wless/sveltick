@@ -24,7 +24,7 @@
 	});
 </script>
 
-<Pond/>
+<Pond />
 
 <main class="flex justify-center items-center h-full overflow-hidden">
 	<div class="h-16 overflow-visible w-full flex justify-center gap-16 scale-50 sm:scale-100">
@@ -69,5 +69,11 @@
 				<Digit value={digits[5]} />
 			</div>
 		</div>
+	</div>
+
+	<div class="fixed w-full flex bottom-4 left-4 justify-start">
+		<p class="text-white/50 text-sm tracking-wide leading-4">Made out of boredom<br />by <a class="underline"
+																																														href="https://github.com/zFl4wless">Fl4wless</a>
+		</p>
 	</div>
 </main>
